@@ -42,6 +42,21 @@
             color: inherit;
         }
 
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .resume-btn {
+            background-color: #374151; /* A dark gray to contrast with your primary blue */
+        }
+
+        .resume-btn:hover {
+            background-color: #111827;
+        }
+
         /* --- Navigation --- */
         nav {
             display: flex;
@@ -236,7 +251,13 @@
         <h1>Hi, I'm Brendan Dial</h1>
         <p>I am near the end of earning my Bachelors of Science degree in Computer Engineering,
             and I seek to push my knowledge and experience further by contributing to the development of aerospace and defense technologies.</p>
-        <a href="#projects" class="btn">View My Work</a>
+        
+        <!-- NEW: Button Group -->
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View My Work</a>
+            <!-- The 'download' attribute forces the browser to download the file instead of opening it -->
+            <a href="resume.pdf" download="Brendan_Dial_Resume.pdf" class="btn resume-btn">Download Resume</a>
+        </div>
         
         <div class="social-icons">
             <a href="https://github.com/bwdial12" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
